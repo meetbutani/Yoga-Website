@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo img {
+    max-width: 71px;
+    max-height: 71px;
+}
+
+.header .menu {
+    margin: 0 100px;
+}
+
+.header .menu a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.9286px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #555547;
+    margin: 0 10px;
+}
+
+.header .search-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .search-login #search {
+    background-color: transparent;
+    border: none;
+    margin: 0 12px;
+}
+
+.header .search-login .login {
+    width: 64px;
+    height: 32px;
+    background-color: transparent;
+    border: 2px solid #009090;
+    border-radius: 9999px;
+    padding: 5px 10px;
+    color: #009090;
+}
+
+.container .wave {
+    width: 2136.65px;
+    height: 1611.92px;
+    bottom: 0.53%;
+    background: linear-gradient(90deg, #D5D4D0 0%, #D5D4D0 1%, #EEEEEC 31%);
+}
+
+.container .yogaimage {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    margin: 0 100px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features {
+    background-color: #F8F8F6;
+    display: flex;
+    width: 100%;
+}
+
+.features .feature-content {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 45px;
+}
+
+.features .feature-content img {
+    width: 56px;
+    height: 56px;
+}
+
+.features .feature-content .heading {
+    width: 100%;
+    text-align: center;
+    color: #0E5C63;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.features .feature-content .description {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555547;
+    min-height: 90px;
+    margin-top: 10px;
+}
+
+.features .feature-content .badge {
+    display: flex;
+}
+
+.features .feature-content .badge img {
+    width: 99px;
+    height: 90px;
+}
+
+.features .feature-content .badge .description {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.yogavideos {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.yogavideos .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.yogavideos .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 170px;
+}
+
+.yogavideos .yoga-content {
+    display: flex;
+}
+
+.yogavideos .yoga-content .video {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    background: #F8F8F6;
+    border-radius: 24px;
+}
+
+.yogavideos .yoga-content .video img {
+    width: 100%;
+    height: auto;
+}
+
+.yogavideos .yoga-content .video .video-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 16px 16px 16px;
+}
+
+.yogavideos .yoga-content .video .video-content .vidauthor {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+    color: #555547;
+}
+
+.yogavideos .yoga-content .video .video-content .vidtitle {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    color: #555547;
+    margin: 6px 0;
+    min-height: 45px;
+}
+
+.yogavideos .yoga-content .video .video-content .vidfooter {
+    display: flex;
+    align-items: center;
+}
+
+.yogavideos .yoga-content .video .video-content .vidfooter span {
+    font-weight: 400;
+    font-size: 18px;
+    color: #555547;
+    margin: 0 5px;
+}
+
+.yogavideos .yoga-content .video .video-content .vidfooter .watch {
+    width: 16px;
+    height: 16px;
+}
+
+.yogavideos .yoga-content .video .video-content .vidfooter .level {
+    width: 23px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+.discountbtn {
+    border-radius: 9999px;
+    background: #F1A293;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.workshop {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.workshop .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.workshop .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 170px;
+}
+
+.workshop .workshop-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* background-image: url(images/banner-liveklassen-workshoips-allgemein-2320x464.svg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    position: relative;
+}
+
+.workshop .workshop-banner img {
+    width: 100%;
+    position: relative;
+}
+
+.workshop .workshop-banner .btnjoinworkshop {
+    position: absolute;
+    padding: 8px 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #009090;
+    border: 2px solid #009090;
+    border-radius: 9999px;
+    text-decoration: none;
+    bottom: 40px;
+    right: 60px;
+}
+
+.instructor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    background: #F8F8F6;
+}
+
+.instructor .instructor-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.instructor .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.instructor .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 170px;
+}
+
+.instructor .instructor-info {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.instructor .instructor-info .instructor-info-item {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.instructor .instructor-info .instructor-info-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.instructor .instructor-info .instructor-info-item .instructor-info-item-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.instructor .instructor-info .instructor-info-item .instructor-info-item-content .title {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0E5C63;
+    margin: 20px 0;
+}
+
+.instructor .instructor-info .instructor-info-item .instructor-info-item-content .description {
+    width: 100%;
+    min-height: 45px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555547;
+    margin: 0;
+}
+
+.yogaprograms {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.yogaprograms .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.yogaprograms .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 170px;
+}
+
+.yogaprograms .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.yogaprograms .slider .slides {
+    display: flex;
+    width: 100%;
+}
+
+.yogaprograms .slider .slides img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.yogaprograms .slider .slides img.show {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.yogaprograms .slider .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.yogaprograms .slider .slider-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #BABABA;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.yogaprograms .slider .slider-dot.active {
+    background-color: #009090;
+}
+
+.discountbtn.margin-var {
+    margin: 48px 0;
+}
