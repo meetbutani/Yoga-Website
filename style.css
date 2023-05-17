@@ -8,25 +8,28 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
+    line-height: normal;
+    font-size: medium;
+    font-weight: normal;
 }
 
-.header {
+.customcss .header {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header .logo img {
+.customcss .header .logo img {
     max-width: 71px;
     max-height: 71px;
 }
 
-.header .menu {
+.customcss .header .menu {
     margin: 0 100px;
 }
 
-.header .menu a {
+.customcss .header .menu a {
     font-style: normal;
     font-weight: 600;
     font-size: 13.9286px;
@@ -36,42 +39,49 @@ body {
     margin: 0 10px;
 }
 
-.header .search-login {
+.customcss .header .search-login {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header .search-login #search {
+.customcss .header .search-login #search {
     background-color: transparent;
     border: none;
     margin: 0 12px;
 }
 
-.header .search-login .login {
+.customcss .header .search-login .login {
     width: 64px;
     height: 32px;
     background-color: transparent;
     border: 2px solid #009090;
     border-radius: 9999px;
     padding: 5px 10px;
+    font-weight: 600;
+    font-size: 12.381px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #009090;
+    text-decoration: none;
 }
 
-.container .wave {
+.customcss .web-content .wave {
     width: 2136.65px;
     height: 1611.92px;
     bottom: 0.53%;
     background: linear-gradient(90deg, #D5D4D0 0%, #D5D4D0 1%, #EEEEEC 31%);
 }
 
-.container .yogaimage {
+.customcss .web-content .yogaimage {
     width: 100%;
     height: auto;
 }
 
-.content {
-    margin: 0 100px;
+.customcss .content {
+    margin: 0 171px;
     margin-top: -100px;
     position: relative;
     z-index: 1;
@@ -81,27 +91,27 @@ body {
     flex-wrap: wrap;
 }
 
-.features {
+.customcss .features {
     background-color: #F8F8F6;
     display: flex;
     width: 100%;
 }
 
-.features .feature-content {
+.customcss .features .feature-content {
     width: 33.33%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 45px;
+    padding: 30px;
 }
 
-.features .feature-content img {
+.customcss .features .feature-content img {
     width: 56px;
     height: 56px;
 }
 
-.features .feature-content .heading {
+.customcss .features .feature-content .heading {
     width: 100%;
     text-align: center;
     color: #0E5C63;
@@ -109,7 +119,7 @@ body {
     font-size: 24px;
 }
 
-.features .feature-content .description {
+.customcss .features .feature-content .description {
     width: 100%;
     text-align: center;
     font-weight: 400;
@@ -119,21 +129,21 @@ body {
     margin-top: 10px;
 }
 
-.features .feature-content .badge {
+.customcss .features .feature-content .excellentbadge {
     display: flex;
 }
 
-.features .feature-content .badge img {
+.customcss .features .feature-content .excellentbadge img {
     width: 99px;
     height: 90px;
 }
 
-.features .feature-content .badge .description {
+.customcss .features .feature-content .excellentbadge .description {
     text-align: left;
     margin-left: 10px;
 }
 
-.yogavideos {
+.customcss .yogavideos {
     margin-top: 48px;
     display: flex;
     justify-content: center;
@@ -141,25 +151,25 @@ body {
     flex-wrap: wrap;
 }
 
-.yogavideos .heading {
+.customcss .yogavideos .heading {
     font-weight: 700;
     font-size: 32px;
     color: #0E5C63;
 }
 
-.yogavideos .description {
+.customcss .yogavideos .description {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #555547;
-    margin: 15px 170px;
+    margin: 15px 100px;
 }
 
-.yogavideos .yoga-content {
+.customcss .yogavideos .yoga-content {
     display: flex;
 }
 
-.yogavideos .yoga-content .video {
+.customcss .yogavideos .yoga-content .video {
     width: 33.33%;
     display: flex;
     flex-wrap: wrap;
@@ -168,18 +178,19 @@ body {
     border-radius: 24px;
 }
 
-.yogavideos .yoga-content .video img {
+.customcss .yogavideos .yoga-content .video .img {
     width: 100%;
     height: auto;
+    border-radius: 24px 24px 0 0;
 }
 
-.yogavideos .yoga-content .video .video-content {
+.customcss .yogavideos .yoga-content .video .video-content {
     display: flex;
     flex-wrap: wrap;
     margin: 8px 16px 16px 16px;
 }
 
-.yogavideos .yoga-content .video .video-content .vidauthor {
+.customcss .yogavideos .yoga-content .video .video-content .vidauthor {
     width: 100%;
     font-weight: 400;
     font-size: 18px;
@@ -187,7 +198,7 @@ body {
     color: #555547;
 }
 
-.yogavideos .yoga-content .video .video-content .vidtitle {
+.customcss .yogavideos .yoga-content .video .video-content .vidtitle {
     width: 100%;
     font-weight: 700;
     font-size: 18px;
@@ -197,30 +208,30 @@ body {
     min-height: 45px;
 }
 
-.yogavideos .yoga-content .video .video-content .vidfooter {
+.customcss .yogavideos .yoga-content .video .video-content .vidfooter {
     display: flex;
     align-items: center;
 }
 
-.yogavideos .yoga-content .video .video-content .vidfooter span {
+.customcss .yogavideos .yoga-content .video .video-content .vidfooter span {
     font-weight: 400;
     font-size: 18px;
     color: #555547;
     margin: 0 5px;
 }
 
-.yogavideos .yoga-content .video .video-content .vidfooter .watch {
+.customcss .yogavideos .yoga-content .video .video-content .vidfooter .watch {
     width: 16px;
     height: 16px;
 }
 
-.yogavideos .yoga-content .video .video-content .vidfooter .level {
+.customcss .yogavideos .yoga-content .video .video-content .vidfooter .level {
     width: 23px;
     height: 18px;
     margin-left: 5px;
 }
 
-.discountbtn {
+.customcss .discountbtn {
     border-radius: 9999px;
     background: #F1A293;
     font-weight: 600;
@@ -231,7 +242,7 @@ body {
     margin-top: 10px;
 }
 
-.workshop {
+.customcss .workshop {
     margin-top: 48px;
     display: flex;
     justify-content: center;
@@ -239,25 +250,26 @@ body {
     flex-wrap: wrap;
 }
 
-.workshop .heading {
+.customcss .workshop .heading {
     font-weight: 700;
     font-size: 32px;
     color: #0E5C63;
 }
 
-.workshop .description {
+.customcss .workshop .description {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #555547;
-    margin: 15px 170px;
+    margin: 15px 100px;
 }
 
-.workshop .workshop-banner {
+.customcss .workshop .workshop-banner {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 24px;
 
     /* background-image: url(images/banner-liveklassen-workshoips-allgemein-2320x464.svg);
     background-size: cover;
@@ -266,12 +278,13 @@ body {
     position: relative;
 }
 
-.workshop .workshop-banner img {
+.customcss .workshop .workshop-banner img {
     width: 100%;
     position: relative;
+    border-radius: 24px;
 }
 
-.workshop .workshop-banner .btnjoinworkshop {
+.customcss .workshop .workshop-banner .btnjoinworkshop {
     position: absolute;
     padding: 8px 50px;
     font-weight: 600;
@@ -280,11 +293,11 @@ body {
     border: 2px solid #009090;
     border-radius: 9999px;
     text-decoration: none;
-    bottom: 40px;
+    bottom: 35px;
     right: 60px;
 }
 
-.instructor {
+.customcss .instructor {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -294,7 +307,7 @@ body {
     background: #F8F8F6;
 }
 
-.instructor .instructor-img {
+.customcss .instructor .instructor-img {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -302,27 +315,27 @@ body {
     margin: 20px;
 }
 
-.instructor .heading {
+.customcss .instructor .heading {
     font-weight: 700;
     font-size: 32px;
     color: #0E5C63;
 }
 
-.instructor .description {
+.customcss .instructor .description {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #555547;
-    margin: 15px 170px;
+    margin: 15px 100px;
 }
 
-.instructor .instructor-info {
+.customcss .instructor .instructor-info {
     width: 100%;
     display: flex;
     margin: 20px 0;
 }
 
-.instructor .instructor-info .instructor-info-item {
+.customcss .instructor .instructor-info .instructor-info-item {
     width: 25%;
     display: flex;
     justify-content: center;
@@ -330,21 +343,22 @@ body {
     flex-wrap: wrap;
 }
 
-.instructor .instructor-info .instructor-info-item img {
+.customcss .instructor .instructor-info .instructor-info-item img {
     width: 200px;
     height: 200px;
+    border-radius: 100%;
 }
 
-.instructor .instructor-info .instructor-info-item .instructor-info-item-content {
+.customcss .instructor .instructor-info .instructor-info-item .instructor-info-item-content {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
-.instructor .instructor-info .instructor-info-item .instructor-info-item-content .title {
+.customcss .instructor .instructor-info .instructor-info-item .instructor-info-item-content .title {
     width: 100%;
     text-align: center;
     font-weight: 700;
@@ -353,7 +367,7 @@ body {
     margin: 20px 0;
 }
 
-.instructor .instructor-info .instructor-info-item .instructor-info-item-content .description {
+.customcss .instructor .instructor-info .instructor-info-item .instructor-info-item-content .description {
     width: 100%;
     min-height: 45px;
     text-align: center;
@@ -363,7 +377,7 @@ body {
     margin: 0;
 }
 
-.yogaprograms {
+.customcss .yogaprograms {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -372,50 +386,30 @@ body {
     margin-top: 48px;
 }
 
-.yogaprograms .heading {
+.customcss .yogaprograms .heading {
     font-weight: 700;
     font-size: 32px;
     color: #0E5C63;
 }
 
-.yogaprograms .description {
+.customcss .yogaprograms .description {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #555547;
-    margin: 15px 170px;
+    margin: 15px 100px;
 }
 
-.yogaprograms .slider {
-    width: 100%;
-    overflow: hidden;
+.customcss .yogaprograms .carousel .carousel-inner .carousel-item img {
+    border-radius: 24px
+}
+
+.customcss .yogaprograms .carousel.slide .carousel-indicators.custom {
     position: relative;
+    margin: 5px;
 }
 
-.yogaprograms .slider .slides {
-    display: flex;
-    width: 100%;
-}
-
-.yogaprograms .slider .slides img {
-    width: 100%;
-    height: auto;
-    display: none;
-}
-
-.yogaprograms .slider .slides img.show {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.yogaprograms .slider .slider-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.yogaprograms .slider .slider-dot {
+.customcss .yogaprograms .carousel.slide .carousel-indicators .slider-dot {
     height: 10px;
     width: 10px;
     background-color: #BABABA;
@@ -424,10 +418,338 @@ body {
     cursor: pointer;
 }
 
-.yogaprograms .slider .slider-dot.active {
+.customcss .yogaprograms .carousel.slide .carousel-indicators .slider-dot.active {
     background-color: #009090;
 }
 
-.discountbtn.margin-var {
+.customcss .discountbtn.margin-var {
     margin: 48px 0;
+}
+
+.customcss .yogaarticle {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.customcss .yogaarticle .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.customcss .yogaarticle .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 100px;
+}
+
+.customcss .yogaarticle .yoga-content {
+    display: flex;
+}
+
+.customcss .yogaarticle .yoga-content .article {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    background: #009090;
+    border-radius: 24px;
+}
+
+.customcss .yogaarticle .yoga-content .article .thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 24px 24px 0 0;
+    top: -2px;
+    position: relative;
+}
+
+.customcss .yogaarticle .yoga-content .article .article-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 16px 16px 16px;
+}
+
+.customcss .yogaarticle .yoga-content .article .article-content .articletitle {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin: 6px 0;
+    min-height: 52px;
+}
+
+.customcss .yogaarticle .yoga-content .article .article-content .articlefooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.customcss .yogaarticle .yoga-content .article .article-content .articlefooter .gotoarticle {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 5px;
+}
+
+.customcss .yogaarticle .yoga-content .article .article-content .articlefooter .gotoarticleimg {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.customcss .download-banner {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+}
+
+.customcss .download-banner .img {
+    width: 58%;
+    height: auto;
+}
+
+.customcss .download-banner .right {
+    width: 42%;
+    background-color: #E6F2F0;
+    display: block;
+    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+}
+
+.customcss .download-banner .right .mobile {
+    width: 100%;
+    height: 56px;
+    margin: 24px 0;
+}
+
+.customcss .download-banner .right .title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #0E5C63;
+    display: block;
+    margin: 0 40px;
+    line-height: 48px;
+}
+
+.customcss .download-banner .right .description {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    line-height: 27px;
+    margin: 0 15px;
+}
+
+.customcss .download-banner .right .download {
+    display: flex;
+    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.customcss .download-banner .right .download img {
+    width: 150px;
+    height: 45px;
+}
+
+.customcss .academy {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.customcss .academy .heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0E5C63;
+}
+
+.customcss .academy .description {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #555547;
+    margin: 15px 100px;
+}
+
+.customcss .academy img {
+    width: 100%;
+    border-radius: 24px;
+    margin: 10px 0;
+}
+
+.customcss .reviews {
+    width: 100%;
+    display: flex;
+    margin: 48px 0;
+}
+
+.customcss .reviews .review {
+    width: 33.33%;
+    display: block;
+    background: #F3EEE9;
+    border-radius: 12px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.customcss .reviews .review .stars {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 24px 0;
+    z-index: 2;
+}
+
+.customcss .reviews .review .review-content {
+    display: block;
+    width: 100%;
+    padding: 0 15px 70px 15px;
+    z-index: 2;
+}
+
+.customcss .reviews .review .review-content .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #555547;
+    align-items: center;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.customcss .reviews .review .review-content .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #555547;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 16px 0;
+}
+
+.customcss .reviews .review .review-content .description2 {
+    margin: 0;
+}
+
+.customcss .reviews .review .double-quota {
+    position: absolute;
+    top: 70px;
+    left: 112px;
+    z-index: 0;
+}
+
+.customcss .users {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.customcss .users .title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #555547;
+}
+
+.customcss .users .companys {
+    margin: 24px 0;
+}
+
+.customcss .users .companys .img {
+    margin: 0 20px;
+    width: auto;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: linear-gradient(180deg, #128788 0%, #0E5C63 59.37%);
+}
+
+.footer-container {
+    margin: 48px 170px;
+}
+
+.footer-container .newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container .newsletter .title {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-container .newsletter .description {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 13px 0;
+}
+
+.footer-container .newsletter form {
+    display: block;
+}
+
+.footer-container .newsletter .input {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-shadow: inset 0px 1.25px 2.5px rgba(10, 10, 10, 0.05);
+    border-radius: 4px;
+    width: 318px;
+    height: 60px;
+    padding: 0 20px;
+    margin: 16px 0;
+}
+
+.footer-container .newsletter .submit {
+    padding: 10px 63.2656px 10px 63.7344px;
+    width: 318px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 9999px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #555547;
+    border: none;
 }
