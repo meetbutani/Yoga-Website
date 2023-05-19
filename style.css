@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro-Regular.ttf);
+    src: url(fonts/SourceSansPro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(fonts/Philosopher/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(fonts/PlayfairDisplay/static/PlayfairDisplay-ExtraBold.ttf);
 }
 
 body {
@@ -13,16 +23,30 @@ body {
     font-weight: normal;
 }
 
+.navbar-toggler,
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.customcss {
+    display: flex;
+    flex-direction: column;
+}
+
 .customcss .header {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 48px;
 }
 
 .customcss .header .logo img {
     max-width: 71px;
     max-height: 71px;
+    margin: 8px 0;
 }
 
 .customcss .header .menu {
@@ -45,10 +69,23 @@ body {
     align-items: center;
 }
 
-.customcss .header .search-login #search {
+.customcss .header .search-login #submit {
     background-color: transparent;
     border: none;
-    margin: 0 12px;
+    margin-right: 12px;
+}
+
+.customcss .header .search-login .input {
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    margin-left: 12px;
+    padding: 5px 20px;
+}
+
+.customcss .header .search-login .input:focus {
+    border: none;
+    outline: none;
 }
 
 .customcss .header .search-login .login {
@@ -68,23 +105,101 @@ body {
     text-decoration: none;
 }
 
-.customcss .web-content .wave {
-    width: 2136.65px;
-    height: 1611.92px;
-    bottom: 0.53%;
-    background: linear-gradient(90deg, #D5D4D0 0%, #D5D4D0 1%, #EEEEEC 31%);
+.customcss .web-content .yogaimage {
+    position: relative;
 }
 
-.customcss .web-content .yogaimage {
+.customcss .web-content .yogaimage .wave {
+    position: relative;
+    z-index: 1;
+}
+
+.customcss .web-content .yogaimage .discount {
+    position: absolute;
+    top: 46%;
+    left: 71%;
+    z-index: 1;
+}
+
+.customcss .web-content .yogaimage .discount .data {
+    position: absolute;
+    /* top: -221px; */
+    top: 2vw;
+    left: 3vw;
+    /* width: 204px;
+    height: 211px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customcss .web-content .yogaimage .discount .data .percent {
+    font-weight: 700;
+    font-size: 4.5vw;
+    line-height: 1.15;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.customcss .web-content .yogaimage .discount .data .text {
+    font-weight: 600;
+    font-size: 2.35vw;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.customcss .web-content .yogaimage .image-content {
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+    z-index: 1;
+    width: 33.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.customcss .web-content .yogaimage .image-content .title {
+    font-family: Philosopher, 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.25vw;
+    line-height: 1.15;
+    color: #0E5C63;
+    margin-bottom: 2vw;
+}
+
+.customcss .web-content .yogaimage .image-content .description {
+    font-weight: 700;
+    font-size: 1.21vw;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    color: #555547;
+    margin-bottom: 3vw;
+}
+
+.customcss .web-content .yogaimage .img {
+    position: absolute;
+    top: 26.2vw;
+    z-index: -1;
     width: 100%;
     height: auto;
 }
 
 .customcss .content {
-    margin: 0 171px;
-    margin-top: -100px;
+    margin: 0 11vw;
+    /* margin-top: -100px; */
     position: relative;
-    z-index: 1;
+    top: 28.5vw;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,15 +209,18 @@ body {
 .customcss .features {
     background-color: #F8F8F6;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
 }
 
 .customcss .features .feature-content {
     width: 33.33%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     padding: 30px;
 }
 
@@ -131,6 +249,7 @@ body {
 
 .customcss .features .feature-content .excellentbadge {
     display: flex;
+    width: 100%;
 }
 
 .customcss .features .feature-content .excellentbadge img {
@@ -144,11 +263,13 @@ body {
 }
 
 .customcss .yogavideos {
+    width: 100%;
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .customcss .yogavideos .heading {
@@ -167,13 +288,19 @@ body {
 
 .customcss .yogavideos .yoga-content {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .customcss .yogavideos .yoga-content .video {
-    width: 33.33%;
+    width: 32.5%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    flex-direction: column;
+    margin: 10px auto;
     background: #F8F8F6;
     border-radius: 24px;
 }
@@ -185,6 +312,7 @@ body {
 }
 
 .customcss .yogavideos .yoga-content .video .video-content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 8px 16px 16px 16px;
@@ -209,8 +337,10 @@ body {
 }
 
 .customcss .yogavideos .yoga-content .video .video-content .vidfooter {
+    width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .customcss .yogavideos .yoga-content .video .video-content .vidfooter span {
@@ -235,15 +365,15 @@ body {
     border-radius: 9999px;
     background: #F1A293;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.34vw;
     color: #FFFFFF;
-    padding: 10px 50px;
+    padding: 0.75vw 3.35vw;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 
 .customcss .workshop {
-    margin-top: 48px;
+    margin: 48px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,16 +395,50 @@ body {
 }
 
 .customcss .workshop .workshop-banner {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customcss .workshop .workshop-banner .banner-content {
+    width: 40%;
+    background-color: #FFF3EB;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.customcss .workshop .workshop-banner .banner-content .title {
+    font-family: PlayfairDisplay, serif;
+    font-size: 44px;
+    line-height: 1.15;
+    text-align: center;
+    color: #0E5C63;
+}
+
+.customcss .workshop .workshop-banner .banner-content .btnjoinworkshop {
+    padding: 8px 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #009090;
+    border: 2px solid #009090;
+    border-radius: 9999px;
+    text-decoration: none;
+    margin: 24px 0;
+    margin-right: 12%;
+}
+
+/* .customcss .workshop .workshop-banner {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     border-radius: 24px;
-
-    /* background-image: url(images/banner-liveklassen-workshoips-allgemein-2320x464.svg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-
     position: relative;
 }
 
@@ -295,7 +459,7 @@ body {
     text-decoration: none;
     bottom: 35px;
     right: 60px;
-}
+} */
 
 .customcss .instructor {
     width: 100%;
@@ -450,13 +614,19 @@ body {
 
 .customcss .yogaarticle .yoga-content {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .customcss .yogaarticle .yoga-content .article {
-    width: 33.33%;
+    width: 32.5%;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    flex-direction: column;
+    margin: 10px auto;
     background: #009090;
     border-radius: 24px;
 }
@@ -510,11 +680,13 @@ body {
     width: 100%;
     margin: 40px 0;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
 .customcss .download-banner .img {
     width: 58%;
-    height: auto;
 }
 
 .customcss .download-banner .right {
@@ -555,6 +727,7 @@ body {
 .customcss .download-banner .right .download {
     display: flex;
     margin: 0 40px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -562,6 +735,7 @@ body {
 .customcss .download-banner .right .download img {
     width: 150px;
     height: 45px;
+    margin: 0 10px 30px 10px;
 }
 
 .customcss .academy {
@@ -576,6 +750,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     color: #0E5C63;
+    text-align: center;
 }
 
 .customcss .academy .description {
@@ -593,18 +768,25 @@ body {
 }
 
 .customcss .reviews {
-    width: 100%;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 48px 0;
 }
 
 .customcss .reviews .review {
-    width: 33.33%;
-    display: block;
+    width: 32.5%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin: 10px auto;
+    position: relative;
     background: #F3EEE9;
     border-radius: 12px;
-    margin: 0 10px;
-    position: relative;
+    align-self: stretch;
 }
 
 .customcss .reviews .review .stars {
@@ -612,14 +794,16 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: 24px 0;
+    margin: 1.61vw 0;
     z-index: 2;
 }
 
 .customcss .reviews .review .review-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0 15px 70px 15px;
+    padding: 0 1vw 4.695vw 1vw;
     z-index: 2;
 }
 
@@ -652,8 +836,8 @@ body {
 
 .customcss .reviews .review .double-quota {
     position: absolute;
-    top: 70px;
-    left: 112px;
+    top: 22%;
+    left: 31%;
     z-index: 0;
 }
 
@@ -676,23 +860,31 @@ body {
 
 .customcss .users .companys {
     margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .customcss .users .companys .img {
-    margin: 0 20px;
+    margin: 10px 20px;
     width: auto;
     height: auto;
 }
 
 footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     background: linear-gradient(180deg, #128788 0%, #0E5C63 59.37%);
+    margin-bottom: 491px;
+    position: relative;
+    top: 443px;
 }
 
 .footer-container {
-    margin: 48px 170px;
+    margin: 48px 170px 84px 170px;
 }
 
 .footer-container .newsletter {
@@ -708,8 +900,6 @@ footer {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
@@ -738,6 +928,7 @@ footer {
     height: 60px;
     padding: 0 20px;
     margin: 16px 0;
+    outline: none;
 }
 
 .footer-container .newsletter .submit {
@@ -753,3 +944,197 @@ footer {
     color: #555547;
     border: none;
 }
+
+.footer-container .pages {
+    display: flex;
+    margin: 48px 0;
+}
+
+.footer-container .pages .col {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .pages .col .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.footer-container .pages .col .link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-container .pages hr {
+    margin-bottom: 24px;
+    background-color: #FFFFFF80;
+    height: 1px;
+}
+
+.footer-container .pages-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .pages-bottom .data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+.footer-container .social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.footer-container .social-media .col {
+    width: 33%;
+}
+
+.footer-container .social-media .col a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+/* Break points */
+@media only screen and (max-width: 1199.5px) {
+
+    .rmw-auto {
+        width: 100% !important;
+    }
+
+    .xlw-100 {
+        width: 100% !important;
+    }
+
+    .xl-d-flex-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    .xl-my-menu {
+        margin: 5px 0 !important;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+    .features>* {
+        flex: 1 1 45vw;
+    }
+
+    .yoga-content>* {
+        flex: 1 1 45vw;
+    }
+
+    .reviews>* {
+        flex: 1 1 45vw;
+    }
+
+    .download-banner .img,
+    .download-banner .right {
+        width: 100% !important;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .features>* {
+        flex: 1 1 34vw;
+    }
+
+    .yoga-content>* {
+        flex: 0 1 38vw;
+    }
+
+    .reviews>* {
+        flex: 0 1 38vw;
+    }
+
+    .download-banner .img,
+    .download-banner .right {
+        width: 100% !important;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .features>* {
+        flex: 1 1 27vw;
+    }
+
+    .yoga-content>* {
+        flex: 0 1 38vw;
+        justify-content: center !important;
+    }
+
+    .reviews>* {
+        flex: 0 1 38vw;
+        justify-content: center !important;
+    }
+
+    .download-banner .img,
+    .download-banner .right {
+        width: 100% !important;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .features>* {
+        flex: 1 1 23vw;
+    }
+
+    .yoga-content>* {
+        flex: 0 1 25vw;
+    }
+
+    .reviews>* {
+        flex: 0 1 25vw;
+    }
+
+    .download-banner>* {
+        flex: 0 1 25vw;
+    }
+}
+
+/* Media Query for Large screens
+@media (min-width: 1281px) {
+
+    .features>* {
+        flex: 1 1 23vw;
+    }
+
+    .yoga-content>* {
+        flex: 0 1 25vw;
+    }
+} */

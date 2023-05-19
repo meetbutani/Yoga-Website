@@ -8,12 +8,108 @@
     <title>Yoga Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="customcss">
-        <nav class="header">
+
+        <!-- <nav class="navbar navbar-expand-xl navbar-light p-0 header">
+            <div class="container-fluid w-auto p-0">
+                <div class="logo order-0">
+                    <img src="images/logo.png" alt="Website Logo" />
+                </div>
+                <button class="navbar-toggler m-2 order-2" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-0 justify-content-between menu" id="mynavbar">
+                    <ul class="navbar-nav justify-content-center w-100" style="margin: 0 100px;">
+                        <li class="nav-item me-1">
+                            <a href="#videos">Videos</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a href="#Programme">Programme</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a href="#Live">Live</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a href="#Lehrer:innen">Lehrer:innen</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a href="#Yoga-Magazin">Yoga-Magazin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Academy">Academy <img src="images/link.svg" alt="Link Image"></a>
+                        </li>
+                    </ul>
+                    <div class="search-login">
+                        <form class="d-flex" action="#search" method="get">
+                            <input class="input" type="text" name="search-inp" id="search-inp" placeholder="Search"
+                                autocomplete="on">
+                            <button type="submit" id="submit"><img src="images/search.svg" alt="Search Image"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="search-login order-1">
+                    <a href="#login" class="login" id="login">Login</a>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-xl navbar-light p-0 header">
+            <div class="container-fluid w-auto p-0 rmw-auto">
+                <div class="logo d-flex justify-content-between xlw-100">
+                    <img src="images/logo.png" alt="Website Logo" />
+                    <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar">
+                        <i class="open fa-solid fa-bars" style="color: #000000;"></i>
+                        <!-- <i class="close fa-solid fa-xmark" style="color: #000000;"></i> -->
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse m-0 justify-content-between menu" id="mynavbar">
+                    <ul class="navbar-nav justify-content-center align-items-center w-100 xl-d-flex-center" style="margin: 0 100px;">
+                        <li class="nav-item me-1 xl-my-menu">
+                            <a href="#videos">Videos</a>
+                        </li>
+                        <li class="nav-item me-1 xl-my-menu">
+                            <a href="#Programme">Programme</a>
+                        </li>
+                        <li class="nav-item me-1 xl-my-menu">
+                            <a href="#Live">Live</a>
+                        </li>
+                        <li class="nav-item me-1 xl-my-menu">
+                            <a href="#Lehrer:innen">Lehrer:innen</a>
+                        </li>
+                        <li class="nav-item me-1 xl-my-menu">
+                            <a href="#Yoga-Magazin">Yoga-Magazin</a>
+                        </li>
+                        <li class="nav-item xl-my-menu">
+                            <a href="#Academy">Academy <img src="images/link.svg" alt="Link Image"></a>
+                        </li>
+                        <li class="nav-item xl-my-menu">
+                            <div class="search-login">
+                                <form class="d-flex" action="#search" method="get">
+                                    <input class="input" type="text" name="search-inp" id="search-inp"
+                                        placeholder="Search" autocomplete="on">
+                                    <button type="submit" id="submit"><img src="images/search.svg"
+                                            alt="Search Image"></button>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item xl-my-menu">
+                            <div class="search-login">
+                                <a href="#login" class="login" id="login">Login</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+        <!-- <nav class="header">
             <div class="logo">
                 <img src="images/logo.png" alt="Website Logo" />
             </div>
@@ -26,12 +122,59 @@
                 <a href="#Academy">Academy <img src="images/link.svg" alt="Link Image"></a>
             </div>
             <div class="search-login">
-                <button id="search"><img src="images/search.svg" alt="Search Image"></button>
+                <form action="#search" method="get">
+                    <input class="input" type="text" name="search-inp" id="search-inp" placeholder="Search"
+                        autocomplete="on">
+                    <button type="submit" id="submit"><img src="images/search.svg" alt="Search Image"></button>
+                </form>
                 <a href="#login" class="login" id="login">Login</a>
             </div>
-        </nav>
+        </nav> -->
+
         <div class="web-content">
-            <img class="yogaimage" src="./images/yoga.png" alt="Yoga Image">
+            <div class="yogaimage">
+                <div class="wave">
+                    <svg viewBox="0 0 1516 587" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1516 -1023.62V476.147C1275.77 393.817 924.582 345.03 509.311 503.669C-13.8772 703.538 -408.625 499.667 -620.65 329.382V-1023.62C-608.385 -1029.33 1496.4 -1020.2 1516 -1023.62Z"
+                            fill="url(#paint0_linear_1_11)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_1_11" x1="-620.65" y1="-219.588" x2="1516" y2="-219.588"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D5D4D0" />
+                                <stop offset="0.01" stop-color="#D5D4D0" />
+                                <stop offset="0.31" stop-color="#EEEEEC" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="discount">
+                    <svg width="14vw" height="auto" viewBox="0 0 204 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_20)">
+                            <path
+                                d="M35.2766 180.935C-3.42649 158.277 -13.1123 100.876 20.4866 50.3578C72.0906 -27.1608 127.995 5.78052 152.712 13.8929C188.36 25.5698 199.051 55.725 202.628 84.3642C209.379 138.283 186.794 193.554 136.435 204.944C81.0128 217.481 65.4994 198.593 35.2766 180.935Z"
+                                fill="#00A7A7" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_20">
+                                <rect width="204" height="210.071" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="data">
+                        <span class="percent">25%</span>
+                        <span class="text">Rabatt<br>sichern</span>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <span class="title">Dein Online-Yogastudio</span>
+                    <span class="description">YogaEasy ist dein persönliches Online-Yogastudio für zu hause oder
+                        unterwegs. Mit YogaEasy
+                        kannst du ganz bequem Yoga üben - wann und wo immer du willst.</span>
+                    <a class="discountbtn" href="#discountbtn">25% Rabatt für dich ››</a>
+                </div>
+                <img class="img" src="./images/yoga.png" alt="Yoga Image">
+            </div>
             <div class="content">
                 <div class="features">
                     <div class="feature-content">
@@ -119,10 +262,22 @@
                         Lieblingslehrer:innen und der YogaEasy-Community die Matte ausrollen. In Premium-Live-Workshops
                         kannst du in besondere Themen zusätzlich tiefer einsteigen.</span>
                     <div class="workshop-banner">
+                        <picture>
+                            <source srcset="./images/YogaPosture_without_wave.jpg" media="(max-width: 1024px)">
+                            <source srcset="./images/YogaPosture_with_wave.jpg">
+                            <img src="./images/YogaPosture_with_wave.jpg" alt="Live workshop Banner Image" style="width:60%">
+                        </picture>
+                        <!-- <img src="images/YogaPosture.png" alt="Live workshop Banner Image"> -->
+                        <div class="banner-content">
+                            <span class="title">Übe live mit der YogaEasy-Community</span>
+                            <a class="btnjoinworkshop" href="#joinworkshop">Zur Anmeldung</a>
+                        </div>
+                    </div>
+                    <!-- <div class="workshop-banner">
                         <img src="images/banner-liveklassen-workshoips-allgemein-2320x464.svg"
                             alt="Live workshop Banner Image">
                         <a class="btnjoinworkshop" href="#joinworkshop">Zur Anmeldung</a>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="instructor">
@@ -355,11 +510,92 @@
             <div class="footer-container">
                 <div class="newsletter">
                     <span class="title">Wir halten dich auf dem Laufenden</span>
-                    <span class="description">Unser Newsletter informiert dich wöchentlich über neue Videos und gibt dir yogische Inspiration.</span>
-                    <form action="#newslettersubscription">
+                    <span class="description">Unser Newsletter informiert dich wöchentlich über neue Videos und gibt dir
+                        yogische Inspiration.</span>
+                    <form action="#newslettersubscription" method="get">
                         <input type="email" class="input" id="email" name="email" placeholder="E-Mail-Adresse"><br>
                         <input type="submit" class="submit" name="submit" id="submit" value="Newsletter abonnieren">
                     </form>
+                </div>
+                <div class="pages">
+                    <div class="col">
+                        <span class="title">Yoga-Videos</span>
+                        <a href="#link" class="link">Yoga für Anfänger:innen</a>
+                        <a href="#link" class="link">Yoga für Fortgeschrittene</a>
+                        <a href="#link" class="link">Yoga für Gesundheit und Sport</a>
+                        <a href="#link" class="link">Meditationen</a>
+                        <a href="#link" class="link">Pranayama</a>
+                        <a href="#link" class="link">Sonnengruß</a>
+                        <a href="#link" class="link">Asana Clips</a>
+                        <a href="#link" class="link">Yoga für Schwangerschaft & Rückbildung</a>
+                        <a href="#link" class="link">Mantras</a>
+                        <a href="#link" class="link">Interviews, Berichte und Vorträge</a>
+                    </div>
+                    <div class="col">
+                        <span class="title">Yogastile</span>
+                        <a href="#link" class="link">Vinyasa Flow / Power Yoga</a>
+                        <a href="#link" class="link">Iyengar</a>
+                        <a href="#link" class="link">Anusara</a>
+                        <a href="#link" class="link">Kundalini</a>
+                        <a href="#link" class="link">Hatha</a>
+                        <a href="#link" class="link">Ashtanga</a>
+                        <a href="#link" class="link">Jivamukti</a>
+                        <a href="#link" class="link">Sivananda</a>
+                        <a href="#link" class="link">Pilates</a>
+                        <a href="#link" class="link">Yin Yoga</a>
+                        <a href="#link" class="link">Yogatherapie</a>
+                    </div>
+                    <div class="col">
+                        <span class="title">Alles über Yoga im Yoga-Magazin</span>
+                        <a href="#link" class="link">Yoga für Anfänger:innen</a>
+                        <a href="#link" class="link">Yoga üben</a>
+                        <a href="#link" class="link">Yoga & Gesundheit</a>
+                        <a href="#link" class="link">Yoga-Wissen</a>
+                        <a href="#link" class="link">Yoga-Leben</a>
+                        <a href="#link" class="link">Ernährung & Rezepte</a>
+                        <a href="#link" class="link">City Guides & Studios</a>
+                        <a href="#link" class="link">YogaEasy</a>
+                    </div>
+                    <div class="col">
+                        <a href="#link" class="title">Yoga-Lehrer:innen</a>
+                        <a href="#link" class="title">Yoga-Programme</a>
+                        <a href="#link" class="title">Preise</a>
+                        <a href="#link" class="title">Gutscheine</a>
+                        <a href="#link" class="title">YogaEasy Academy</a>
+                        <a href="#link" class="title">Podcast</a>
+                        <hr>
+                        <a href="#link" class="title">Fragen & Antworten</a>
+                        <a href="#link" class="title">Tipps für deinen Start</a>
+                        <a href="#link" class="title">Verträge hier kündigen</a>
+                    </div>
+                </div>
+                <div class="pages-bottom">
+                    <a href="#link" class="data">Presse</a>
+                    <span class="data">|</span>
+                    <a href="#link" class="data">AGB</a>
+                    <span class="data">|</span>
+                    <a href="#link" class="data">Datenschutz</a>
+                    <span class="data">|</span>
+                    <a href="#link" class="data">Impressum</a>
+                    <span class="data">|</span>
+                    <a href="#link" class="data">Jobs</a>
+                    <span class="data">|</span>
+                    <a href="#link" class="data">Kontakt</a>
+                </div>
+                <div class="social-media">
+                    <div class="col d-flex justify-content-start">
+                        <img src="images/siegel_top_dienstleister_desktop.png" alt="siegel top dienstleister image">
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <a href="#facebook"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+                        <a href="#instagram"><img src="images/instagram.svg" alt="Instagram Icon"></a>
+                        <a href="#pinterest"><img src="images/pinterest.svg" alt="Pinterest Icon"></a>
+                        <a href="#youtube"><img src="images/youtube.svg" alt="Youtube Icon"></a>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a href="#appstore"><img src="images/app_appstore.svg" alt="Appstore Image"></a>
+                        <a href="#playstore"><img src="images/app_googleplay.svg" alt="Google Play Store Image"></a>
+                    </div>
                 </div>
             </div>
         </footer>
