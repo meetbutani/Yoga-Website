@@ -43,6 +43,10 @@ body {
     margin: 0 48px;
 }
 
+.customcss .header .logo {
+    align-items: center;
+}
+
 .customcss .header .logo img {
     max-width: 71px;
     max-height: 71px;
@@ -61,6 +65,22 @@ body {
     text-decoration: none;
     color: #555547;
     margin: 0 10px;
+}
+
+input.navbar-toggler-checkbox {
+    display: none;
+}
+
+input.navbar-toggler-checkbox:checked~label .open {
+    display: none;
+}
+
+input.navbar-toggler-checkbox:checked~label .close {
+    display: inline;
+}
+
+label .close {
+    display: none;
 }
 
 .customcss .header .search-login {
@@ -294,7 +314,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .customcss .yogavideos .yoga-content .video {
@@ -305,6 +325,7 @@ body {
     margin: 10px auto;
     background: #F8F8F6;
     border-radius: 24px;
+    align-self: stretch;
 }
 
 .customcss .yogavideos .yoga-content .video .img {
@@ -314,7 +335,7 @@ body {
 }
 
 .customcss .yogavideos .yoga-content .video .video-content {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     margin: 8px 16px 16px 16px;
@@ -738,8 +759,8 @@ body {
     background-color: #E6F2F0;
     display: block;
     align-items: baseline;
+    /* align-items: center; */
     justify-content: center;
-    align-items: center;
 }
 
 .customcss .download-banner .right .mobile {
@@ -853,14 +874,17 @@ body {
 
 .customcss .reviews .review .review-content .title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    /* font-size: 1.317vw; */
+    /* line-height: 30px; */
     color: #555547;
     align-items: center;
     text-align: center;
     display: block;
     position: relative;
     z-index: 1;
+    text-transform: uppercase;
+    width: 141px;
+    font-size: 20px;
 }
 
 .customcss .reviews .review .review-content .description {
@@ -878,11 +902,16 @@ body {
     margin: 0;
 }
 
+.customcss .reviews .review .double-quotation {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
 .customcss .reviews .review .double-quota {
     position: absolute;
-    top: 22%;
-    left: 31%;
-    z-index: 0;
+    margin-right: 6.6vw;
+    margin-top: -0.2vw;
 }
 
 .customcss .users {
@@ -922,7 +951,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     background: linear-gradient(180deg, #128788 0%, #0E5C63 59.37%);
-    margin-bottom: 32.931vw;
+    /* margin-bottom: 32.931vw; */
     position: relative;
     top: 29.712vw;
 }
@@ -1018,10 +1047,11 @@ footer {
     font-size: 18px;
     line-height: 27px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 12px;
+    text-overflow: ellipsis;
 }
 
 .footer-container .pages .col .link {
@@ -1118,9 +1148,10 @@ footer {
 
     .customcss .header .logo img {
         max-width: 30px;
+        /* max-height: 30px; */
     }
 
-    .logo .open {
+    .logo i {
         font-size: 12px;
     }
 
@@ -1206,6 +1237,11 @@ footer {
         width: 50% !important;
         top: 6vw !important;
     }
+
+    .customcss .reviews .review .double-quota {
+        margin-right: 21vw !important;
+        margin-top: -0.2vw !important;
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -1215,7 +1251,7 @@ footer {
         max-width: 45px;
     }
 
-    .logo .open {
+    .logo i {
         font-size: 14px;
     }
 
@@ -1301,6 +1337,11 @@ footer {
         width: 45% !important;
         top: 6.5vw !important;
     }
+
+    .customcss .reviews .review .double-quota {
+        margin-right: 13vw !important;
+        margin-top: -0.2vw !important;
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -1310,7 +1351,7 @@ footer {
         max-width: 60px;
     }
 
-    .logo .open {
+    .logo i {
         font-size: 16px;
     }
 
@@ -1357,6 +1398,11 @@ footer {
         width: 40% !important;
         top: 7vw !important;
     }
+
+    .customcss .reviews .review .double-quota {
+        margin-right: 10vw !important;
+        margin-top: -0.2vw !important;
+    }
 }
 
 /* Media Query for Laptops and Desktops */
@@ -1376,7 +1422,7 @@ footer {
     }
 
     .download-banner>* {
-        flex: 0 1 25vw;
+        flex: 1 1 25vw;
     }
 
     /* .instructor-info>* {
@@ -1401,8 +1447,13 @@ footer {
 } */
 
 @media (max-width: 1024px) {
-
     .newsletter .submit {
         font-size: 15px !important;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1360px) {
+    .footer-container .pages .col .title.min-h {
+        min-height: 54px;
     }
 }

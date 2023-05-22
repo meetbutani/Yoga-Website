@@ -62,14 +62,19 @@
             <div class="container-fluid w-auto p-0 rmw-auto">
                 <div class="logo d-flex justify-content-between xlw-100">
                     <img src="images/logo.png" alt="Website Logo" />
+
                     <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#mynavbar">
-                        <i class="open fa-solid fa-bars" style="color: #000000;"></i>
-                        <!-- <i class="close fa-solid fa-xmark" style="color: #000000;"></i> -->
+                        <input type="checkbox" id="navbar-toggle" class="navbar-toggler-checkbox" />
+                        <label for="navbar-toggle" class="navbar-toggler m-2">
+                            <i class="open fa-solid fa-bars" style="color: #000000;"></i>
+                            <i class="close fa-solid fa-xmark" style="color: #000000;"></i>
+                        </label>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse m-0 justify-content-between menu" id="mynavbar">
-                    <ul class="navbar-nav justify-content-center align-items-center w-100 xl-d-flex-center" style="margin: 0 100px;">
+                    <ul class="navbar-nav justify-content-center align-items-center w-100 xl-d-flex-center"
+                        style="margin: 0 100px;">
                         <li class="nav-item me-1 xl-my-menu">
                             <a href="#videos">Videos</a>
                         </li>
@@ -105,7 +110,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </nav>
 
@@ -149,7 +154,8 @@
                     </svg>
                 </div>
                 <div class="discount">
-                    <svg width="14vw" height="auto" viewBox="0 0 204 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="14vw" height="auto" viewBox="0 0 204 211" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_20)">
                             <path
                                 d="M35.2766 180.935C-3.42649 158.277 -13.1123 100.876 20.4866 50.3578C72.0906 -27.1608 127.995 5.78052 152.712 13.8929C188.36 25.5698 199.051 55.725 202.628 84.3642C209.379 138.283 186.794 193.554 136.435 204.944C81.0128 217.481 65.4994 198.593 35.2766 180.935Z"
@@ -445,14 +451,14 @@
                             <img src="images/gold-star.svg" alt="Gold Star Image">
                         </div>
                         <div class="review-content">
-                            <span class="title">
-                                <p> Einfach klasse </p>
-                            </span>
+                            <div class="double-quotation">
+                                <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
+                                <span class="title">Einfach klasse</span>
+                            </div>
                             <span class="description">Die App ist einfach klasse. Immer finde ich etwas, was mich
                                 weiterbringt. Ich kann YogaEasy nur weiterempfehlen.</span>
                             <span class="description description2">Claudi via AppStore</span>
                         </div>
-                        <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
                     </div>
                     <div class="review">
                         <div class="stars">
@@ -463,12 +469,14 @@
                             <img src="images/gold-star.svg" alt="Gold Star Image">
                         </div>
                         <div class="review-content">
-                            <span class="title">Vielfalt</span>
+                            <div class="double-quotation">
+                                <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
+                                <span class="title">Vielfalt</span>
+                            </div>
                             <span class="description">Mir gefällt an YogaEasy, dass man verschiedene Yogastile
                                 kennenlernen und ausprobieren kann.</span>
                             <span class="description description2">Petra via ausgezeichnet.org</span>
                         </div>
-                        <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
                     </div>
                     <div class="review">
                         <div class="stars">
@@ -479,12 +487,14 @@
                             <img src="images/gold-star.svg" alt="Gold Star Image">
                         </div>
                         <div class="review-content">
-                            <span class="title">Perfekt!</span>
+                            <div class="double-quotation">
+                                <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
+                                <span class="title">Perfekt!</span>
+                            </div>
                             <span class="description">Es ist ein besonderes Geschenk, die Lebensqualität mit YogaEasy zu
                                 erhöhen.</span>
                             <span class="description description2">Erika via ausgezeichnet.org</span>
                         </div>
-                        <img class="double-quota" src="images/double-quotes.svg" alt="Double Quote Image">
                     </div>
                 </div>
 
@@ -519,7 +529,7 @@
                 </div>
                 <div class="pages">
                     <div class="col">
-                        <span class="title">Yoga-Videos</span>
+                        <span class="title min-h">Yoga-Videos</span>
                         <a href="#link" class="link">Yoga für Anfänger:innen</a>
                         <a href="#link" class="link">Yoga für Fortgeschrittene</a>
                         <a href="#link" class="link">Yoga für Gesundheit und Sport</a>
@@ -532,7 +542,7 @@
                         <a href="#link" class="link">Interviews, Berichte und Vorträge</a>
                     </div>
                     <div class="col">
-                        <span class="title">Yogastile</span>
+                        <span class="title min-h">Yogastile</span>
                         <a href="#link" class="link">Vinyasa Flow / Power Yoga</a>
                         <a href="#link" class="link">Iyengar</a>
                         <a href="#link" class="link">Anusara</a>
@@ -546,7 +556,7 @@
                         <a href="#link" class="link">Yogatherapie</a>
                     </div>
                     <div class="col">
-                        <span class="title">Alles über Yoga im Yoga-Magazin</span>
+                        <span class="title min-h">Alles über Yoga im Yoga-Magazin</span>
                         <a href="#link" class="link">Yoga für Anfänger:innen</a>
                         <a href="#link" class="link">Yoga üben</a>
                         <a href="#link" class="link">Yoga & Gesundheit</a>
