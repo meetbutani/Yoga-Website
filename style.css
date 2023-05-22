@@ -188,7 +188,7 @@ body {
 
 .customcss .web-content .yogaimage .img {
     position: absolute;
-    top: 26.2vw;
+    top: 26vw;
     z-index: -1;
     width: 100%;
     height: auto;
@@ -211,6 +211,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 
@@ -598,8 +599,16 @@ body {
     margin: 15px 6.707vw;
 }
 
+.customcss .yogaprograms .carousel .pre-next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 39px;
+}
+
 .customcss .yogaprograms .carousel .carousel-inner .carousel-item img {
-    border-radius: 24px
+    border-radius: 1.58vw
 }
 
 .customcss .yogaprograms .carousel.slide .carousel-indicators.custom {
@@ -1107,6 +1116,14 @@ footer {
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
 
+    .customcss .header .logo img {
+        max-width: 30px;
+    }
+
+    .logo .open {
+        font-size: 12px;
+    }
+
     .features>* {
         flex: 1 1 45vw;
     }
@@ -1133,6 +1150,7 @@ footer {
 
     .workshop .workshop-banner .banner-content .btnjoinworkshop {
         margin: 1.61vw auto !important;
+        font-size: 12px !important;
     }
 
     .workshop .workshop-banner picture img {
@@ -1145,10 +1163,6 @@ footer {
 
     .workshop .workshop-banner .banner-content .title {
         font-size: 18px !important;
-    }
-
-    .workshop .workshop-banner .banner-content .btnjoinworkshop {
-        font-size: 12px !important;
     }
 
     .instructor-info>* {
@@ -1172,15 +1186,41 @@ footer {
         align-items: center !important;
     }
 
+    .discountbtn {
+        font-size: 4vw !important;
+    }
+
     .image-content .discountbtn {
-        font-size: 1.5vw;
+        font-size: 2vw !important;
+    }
+
+    .image-content .title {
+        font-size: 4vw !important;
+    }
+
+    .image-content .description {
+        font-size: 2vw !important;
+    }
+
+    .image-content {
+        width: 50% !important;
+        top: 6vw !important;
     }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
+
+    .customcss .header .logo img {
+        max-width: 45px;
+    }
+
+    .logo .open {
+        font-size: 14px;
+    }
+
     .features>* {
-        flex: 1 1 34vw;
+        flex: 0.5 1 34vw;
     }
 
     .yoga-content>* {
@@ -1205,6 +1245,7 @@ footer {
 
     .workshop .workshop-banner .banner-content .btnjoinworkshop {
         margin: 1.61vw auto !important;
+        font-size: 16px !important;
     }
 
     .workshop .workshop-banner picture img {
@@ -1217,10 +1258,6 @@ footer {
 
     .workshop .workshop-banner .banner-content .title {
         font-size: 24px !important;
-    }
-
-    .workshop .workshop-banner .banner-content .btnjoinworkshop {
-        font-size: 16px !important;
     }
 
     .instructor-info>* {
@@ -1244,16 +1281,41 @@ footer {
         align-items: center !important;
     }
 
+    .discountbtn {
+        font-size: 16px !important;
+    }
+
     .image-content .discountbtn {
-        font-size: 1.5vw;
+        font-size: 1.75vw !important;
+    }
+
+    .image-content .title {
+        font-size: 3.75vw !important;
+    }
+
+    .image-content .description {
+        font-size: 1.75vw !important;
+    }
+
+    .image-content {
+        width: 45% !important;
+        top: 6.5vw !important;
     }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    .customcss .header .logo img {
+        max-width: 60px;
+    }
+
+    .logo .open {
+        font-size: 16px;
+    }
+
     .features>* {
-        flex: 1 1 27vw;
+        flex: 0.3 1 27vw;
     }
 
     .yoga-content>* {
@@ -1275,8 +1337,25 @@ footer {
         flex: 1 1 27vw;
     }
 
+    .discountbtn {
+        font-size: 18px !important;
+    }
+
     .image-content .discountbtn {
-        font-size: 1.5vw;
+        font-size: 1.5vw !important;
+    }
+
+    .image-content .title {
+        font-size: 3.5vw !important;
+    }
+
+    .image-content .description {
+        font-size: 1.5vw !important;
+    }
+
+    .image-content {
+        width: 40% !important;
+        top: 7vw !important;
     }
 }
 
@@ -1285,7 +1364,7 @@ footer {
 @media (min-width: 1025px) {
 
     .features>* {
-        flex: 1 1 23vw;
+        flex: 0.5 1 23vw;
     }
 
     .yoga-content>* {
